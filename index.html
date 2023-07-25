@@ -15,7 +15,9 @@
       rel="stylesheet"
       type="text/css"
     />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- costome color  -->
     <script>
       tailwind.config = {
@@ -23,12 +25,20 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              pera: "#777",
+              section: "#1C1C1C",
             },
           },
         },
       };
     </script>
     <!-- costome color  -->
+    <!-- font awasome   -->
+    <script
+      src="https://kit.fontawesome.com/563835219b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awasome   -->
 
     <style>
       * {
@@ -37,7 +47,58 @@
     </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-3xl lg:text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6 lg:text-lg font-medium text-pera">
+              Tea and Botanical Solutions Supplier Give Optimum
+              <br class="hidden lg:block" />
+              Satisfaction To Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-white"
+            >
+              Explore More
+            </button>
+          </div>
+          <div>
+            <img src="images/banner.png" class="max-w-sm" />
+            <div
+              class="flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-lg -mt-16"
+            >
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl font-extrabold text-section">5.00</h3>
+                <p class="font-semibold text-base text-pera">
+                  Trust Pilot Ratings
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- featured section  -->
+      <section class="text-center">
+        <h2 class="text-section text-4xl font-extrabold">
+          Our Featured Products
+        </h2>
+        <p class="text-pera font-medium">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form,
+          <br class="hidden lg:block" />
+          by injected humour, or randomised words which don't look even slightly
+          believable.
+        </p>
+      </section>
+      <!-- featured section  -->
+    </main>
   </body>
 </html>
